@@ -3,6 +3,9 @@ Variables
 ****************************************************************************************************
 - Las variables deben ser declaradas antes de ser usadas.
 - Las variables se declaran e inicializan en la sección DECLARE.
+
+¡IMPORTANTE!
+- El dbms_output.put_line(), no admite BOOLEANOS.
 */
 
 /* Ejemplo 01
