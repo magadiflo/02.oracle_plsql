@@ -36,5 +36,5 @@ Son de dos posibles tipos:
             full_data employees%ROWTYPE
         );
     b. Usando record:
-    employee1 employee;
+        employee1 employee;
 */
