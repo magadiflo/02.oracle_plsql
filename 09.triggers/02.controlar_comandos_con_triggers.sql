@@ -20,14 +20,14 @@ BEGIN
 END tx_check_user;
 /
 
--- Probando trigger
+
+-- Verificando datos
 SELECT *
 FROM regions;
-
-DELETE FROM regions WHERE region_id = 5;
 
 SELECT *
 FROM logs;
 
-INSERT INTO regions(region_id, region_name)
+-- Probando trigger (Conectarse con usuario SYSTEM)
+INSERT INTO HR.regions(region_id, region_name)
 VALUES(5, 'Oceanía');
