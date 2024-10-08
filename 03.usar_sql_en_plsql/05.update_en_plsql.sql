@@ -9,13 +9,13 @@ SET SERVEROUTPUT ON;
 ******************************************************
 */
 DECLARE
-    id test.id%TYPE;
+    col_id test.id%TYPE;
 BEGIN
-    id := 1;
+    col_id := 1;
     
-    UPDATE test t
-    SET t.name = 'Nvo. Chimbote'
-    WHERE t.id = id;
+    UPDATE test
+    SET name = 'Nvo. Chimbote'
+    WHERE id = col_id;
     
     COMMIT;    
 END;

@@ -9,11 +9,11 @@ SET SERVEROUTPUT ON;
 ******************************************************
 */
 DECLARE
-    id test.id%TYPE;
+    col_id test.id%TYPE;
 BEGIN
-    id := 1;
+    col_id := 1;
     
-    DELETE FROM test t WHERE t.id = id;
+    DELETE FROM test WHERE id = col_id;
     
     COMMIT;
 END;
